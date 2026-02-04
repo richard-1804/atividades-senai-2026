@@ -12,8 +12,10 @@
     padding: 0px;
 }
 
+
+
 body {
-    background-image: linear-gradient(90deg, #58D8EF, #2783df);
+    background-color: lightblue;
     font-family: Arial, Helvetica, sans-serif;
     
 }
@@ -24,52 +26,51 @@ header {
 }
 
 main {
-    margin: 10px;
-    padding: 10px;
-    font-size: 16px;
+    background-color: white;
     text-align: justify;
+    font-size: 16px;
+    max-width: 600px;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 main img {
-    margin: 10px;
+    display: block;
+    margin: auto;
     width: 150px;
     height: 150px;
     border-radius: 50%;
     border: 1px solid #7E85F0;
 }
 
-#sobre-min > p {
-    margin-bottom: 20px;
+#sobre-min h2 {
+    padding-bottom: 10px;
 }
 
 #experiencias > h2 {
-    margin: 20px 0px;
+    padding-bottom: 10px;
+    margin-top: 10px;
 }
+
 #experiencias > p {
     margin-bottom: 20px;
 }
 
 #experiencias > ul {
     margin: 0px 0px 10px 10px;
-    list-style-type: circle;
+    list-style-type: none;
     font-weight: bold;
-}
-
-
-#redes-sociais > p {
-    margin-bottom: 20px;
 }
 
 #redes-sociais > h2 {
     margin: 20px 0px;
 }
-#redes-sociais > p {
-    margin-bottom: 20px;
-}
 
 #redes-sociais > ul {
     margin: 0px 0px 10px 10px;
-    list-style-type: circle;
+    list-style-type: none;
     font-weight: bold;
 }
 
@@ -79,6 +80,7 @@ main img {
 }
 
 footer {
+    background-color: #6ca7e3be;
     text-align: center;
     padding: 8px;
 }
