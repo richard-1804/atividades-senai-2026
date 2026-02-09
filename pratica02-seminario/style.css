@@ -94,7 +94,7 @@ main {
 }
 
 h2 {
-    margin-bottom: 20px;
+    margin: 20px 0;
     font-size: 23px;
     color: #333;
 }
@@ -105,6 +105,11 @@ h2 {
     gap: 2%;
     row-gap: 30px;
     margin-top: 20px;
+}
+
+.container-imagem a {
+    color: black;
+    text-decoration: none;
 }
 
 figure {
