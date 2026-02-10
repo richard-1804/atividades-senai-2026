@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+
+    --gold: hsl(31, 77%, 52%);
+    --cyan: hsl(184, 100%, 22%);
+    --green: hsl(179, 100%, 13%);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    background-color: gray;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 50px;
+    margin: auto;
+    height: 100vh;
+    max-width: 1000px;
+}
+
+.container {
+    display: flex;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.bloco {
+    display: grid;
+    font-size: 1em;
+    color: white;
+    padding: 50px;
+}
+
+.bloco button {
+    background-color: transparent;
+    color: white;
+    border-radius: 50px;
+    border: 1px solid white;
+}
+
+#sedans {
+    background-color: var(--gold);
+}
+
+#suvs {
+    background-color: var(--cyan);
+}
+
+#luxury {
+    background-color: var(--green);
+}
