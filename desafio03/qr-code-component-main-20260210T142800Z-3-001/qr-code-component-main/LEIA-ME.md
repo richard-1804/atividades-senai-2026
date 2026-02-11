@@ -8,11 +8,10 @@ Boa sorte e atenção sempre!
 
 ## Cores
 
-- White: hsl(0, 0%, 100%)
-
-- Slate 300: hsl(212, 45%, 89%)
-- Slate 500: hsl(216, 15%, 48%)
-- Slate 900: hsl(218, 44%, 22%)
+--white: hsl(0, 0%, 100%);
+--slate 300: hsl(212, 45%, 89%);
+--slate 500: hsl(216, 15%, 48%);
+--slate 900: hsl(218, 44%, 22%);
 
 ## Tipografia
 
