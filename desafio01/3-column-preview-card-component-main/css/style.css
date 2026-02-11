@@ -25,13 +25,14 @@ main {
 }
 
 article {
+    background-color: cadetblue;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    padding: 50px;
+    padding: 50px 20px;
     margin: auto;
-    height: 100vh;
+    min-height: 100vh;
     max-width: 1000px;
 }
 
@@ -82,6 +83,25 @@ article {
     margin-top: 80px;
 }
 
+.bloco button:hover {
+    background-color: white;
+}
+
+.bloco#sedans button:hover {
+    background-color: white;
+    color: var(--gold);
+}
+
+.bloco#suvs button:hover {
+    background-color: white;
+    color: var(--cyan);
+}
+
+.bloco#luxury button:hover {
+    background-color: white;
+    color: var(--green);
+}
+
 #sedans {
     background-color: var(--gold);
 }
@@ -92,4 +112,24 @@ article {
 
 #luxury {
     background-color: var(--green);
+}
+
+@media only screen and (max-width: 760px) {
+    article {
+        padding: 80px 20px;
+    }
+
+    .container {
+        flex-direction: column;
+        max-width: 350px;
+        min-height: 800px;
+    }
+
+    .bloco#sedans {
+        border-radius: 10px 10px 0 0 ;
+    }
+
+    .bloco#luxury {
+        border-radius: 0 0 10px 10px;
+    }
 }
