@@ -1,0 +1,31 @@
+/* Código Reset no CSS */
+/* 1. Remove margens e paddings padrão e define o box-sizing */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Melhora a renderização de fontes e suavidade */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  font-family: sans-serif; /* Troque pela fonte do Figma */
+}
+/* 3. Ajustes para elementos de mídia */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/* 4. Remove estilos padrão de botões e links */
+button, input, select, textarea {
+  font: inherit;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul, ol {
+  list-style: none;
+}
