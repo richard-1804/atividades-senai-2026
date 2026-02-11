@@ -9,12 +9,10 @@ Boa sorte e atenção sempre!
 
 ## Cores
 
-- Yellow: hsl(47, 88%, 63%)
-
-- White: hsl(0, 0%, 100%)
-
-- Gray 500: hsl(0, 0%, 42%)
-- Gray 950: hsl(0, 0%, 7%)
+--yellow: hsl(47, 88%, 63%)
+--white: hsl(0, 0%, 100%)
+--gray-500: hsl(0, 0%, 42%)
+--gray-950: hsl(0, 0%, 7%)
 
 ## Tipografia
 
@@ -24,5 +22,5 @@ Boa sorte e atenção sempre!
 
 ### Fonte
 
-- Family: [Figtree](https://fonts.google.com/specimen/Figtree)
+-- Family: [Figtree](https://fonts.google.com/specimen/Figtree)
 

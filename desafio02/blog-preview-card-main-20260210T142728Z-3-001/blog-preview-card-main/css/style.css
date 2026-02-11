@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --gray-500: hsl(0, 0%, 42%);
+    --gray-950: hsl(0, 0%, 7%);
+
+    --font-family: 'Figtree', sans-serif
+}
+
+main {
+    background-color: var(--yellow);
+    font-family: var(--font-family);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    min-height: 550px;
+    padding: 25px;
+    gap: 20px;
+
+    border-radius: 10px;
+    border: 1px solid var(--gray-500);
+    box-shadow: 10px 8px var(--gray-950);
+}
+
+.container img {
+    border-radius: 10px;
+}
+
+.destaque strong {
+    display: block;
+    background-color: var(--yellow);
+    padding: 5px 5px;
+    width: 80px;
+    text-align: center;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+.container h2 {
+    font-weight: 900;
+}
+
+.container h2:hover {
+    color: var(--yellow);
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.container p {
+    color: var(--gray-500);
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+.foto-perfil {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.foto-perfil img {
+    width: 40px;
+}
+
+@media only screen and (max-width: 420px) {
+    .container{
+        max-width: 320px;
+    }
+}
