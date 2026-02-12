@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Desafio Figma | Daniel Richard</title>
 </head>
 <body>
@@ -10,9 +11,15 @@
         <!-- Adição do logo e nav a-->
          <img src="icon/logo-mine.svg" alt="Logo Maleta Mine">
 
+         <div class="menu-icon">
+            <span class="linha"></span>
+            <span class="linha"></span>
+            <span class="linha"></span>
+         </div>
+
          <nav>
             <ul>
-                <li> <a href="#">Entrar</a> </li>
+                <li class="destaque-header"> <a href="#">Entrar</a> </li>
                 <li> <a href="#">Fórum</a> </li>
                 <li> <a href="#">Sobre</a> </li>
                 <li> <a href="#">Mojang</a> </li>
@@ -20,10 +27,8 @@
             </ul>
          </nav>
     </header>
-
     <main>
-        <article>
-            <section class="container-login"> <!-- Seção Login-->
+          <section class="container-login"> <!-- Seção Login-->
 
                 <div class="general-login-logo">
 
@@ -33,40 +38,47 @@
                             <div class="login-email">
 
                                 <h3>E-mail</h3>
-                                <input type="text" placeholder="iuricode@mail.com">
+                                <input type="text" class="input-login" placeholder="iuricode@mail.com">
                             </div>
 
                             <div class="login-senha">
                                 <h3>Senha</h3>
-                                <input type="password" placeholder="0123456">
+                                <input type="password" class="input-login" placeholder="0123456">
                             </div>
-                            <input type="checkbox"> 
-                            <p>Lembrar minha senha</p>
+
+                            <div class="checkbox-senha">
+                                <input type="checkbox">Lembrar minha senha</input>
+                            </div>
                         </div>
 
-                    <input type="button" value="Entrar na Conta">
+                    <button>Entrar na conta</button>
                 </div>
                 
                 <a href="#">Esqueceu a senha?</a>
-            </section>
-        </article>
+          </section>
     </main>
 
     <footer>
-        <img src="icon/icon-power.svg" alt=" Icon Power">
-        <p>Jogue também offline</p>
-
-        <img src="icon/icon-user.svg" alt="ìcon User">
-        <p>67 jogadores</p>
-
-        <img src="icon/icon-gamecontroller.svg" alt="Icon Game Controller">
-        <p>Compatível com uso remoto</p>
-
-        <img src="icon/icon-vibrate.svg" alt="Icon Smartphone Vibrate">
-        <p>Vibração no controle</p>
-
-        <img src="icon/icon-baby.svg" alt="Icon Baby">
-        <p>Permitido para menores</p>
+            <section>
+                <img src="icon/icon-power.svg" alt=" Icon Power">
+                <p>Jogue também offline</p>
+            </section>
+            <section>
+                <img src="icon/icon-user.svg" alt="ìcon User">
+                <p>67 jogadores</p>
+            </section>
+            <section>
+                <img src="icon/icon-gamecontroller.svg" alt="Icon Game Controller">
+                <p>Compatível com uso remoto</p>
+            </section>
+            <section>
+                <img src="icon/icon-vibrate.svg" alt="Icon Smartphone Vibrate">
+                <p>Vibração no controle</p>
+            </section>
+            <section>
+                <img src="icon/icon-baby.svg" alt="Icon Baby">
+                <p>Permitido para menores</p>
+            </section>
     </footer>
 </body>
 </html>

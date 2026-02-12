@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&display=swap');
+
 /* Código Reset no CSS */
 /* 1. Remove margens e paddings padrão e define o box-sizing */
 *, *::before, *::after {
@@ -11,7 +13,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
-  font-family: sans-serif; /* Troque pela fonte do Figma */
+  font-family: kufam, sans-serif; /* Troque pela fonte do Figma */
 }
 /* 3. Ajustes para elementos de mídia */
 img, picture, video, canvas, svg {
@@ -28,4 +30,241 @@ a {
 }
 ul, ol {
   list-style: none;
+}
+
+body {
+    background-image: url("../imagens/fundo-mine.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  max-width: 1216px;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  padding: 48px 40px;
+}
+
+nav ul {
+  display: flex;
+  gap: 48px;
+}
+
+nav ul li {
+  color: #FFFFFF;
+  font-size: 2em;
+  font-weight: bold;
+  padding: 10px 32px;
+  border-radius: 6px;
+}
+
+nav ul li.destaque-header {
+  background-color: #FFFFFF;
+  color: #269E6D;
+  font-weight: bold;
+  padding: 10px 32px;
+  border-radius: 6px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0;
+  max-width: 1216px;
+  margin: 0 auto;
+  flex: 1;
+}
+
+.container-login {
+  background-color: #262626cc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 40px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.container-login > a {
+  color: #269E6D;
+  font-size: 1em;
+}
+
+.general-login-logo {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 1.8em;
+}
+
+.general-login-logo img {
+  padding-bottom: 9px;
+}
+
+.login {
+  width: 100%;
+}
+
+.login .input-login {
+  background-color: #262626;
+  color: #BAACAC;
+  padding: 8px 16px;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.input-login::placeholder {
+  font-size: 0.8em;
+}
+
+.login-email {
+  padding-bottom: 24px;
+}
+
+.login h3{
+  padding-bottom: 6px;
+  font-size: 0.8em;
+  color: #FFFFFF;
+}
+
+.checkbox-senha {
+  color: #FFFFFF;
+  font-size: 0.5em;
+  display:flex;
+  gap: 8px;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.general-login-logo button {
+  background-color: #269E6D;
+  color: #FFFFFF;
+  padding: 12px 0;
+  margin: 46px 0 48px 0;
+  border: 5px solid #ffffff80;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1216px;
+  padding: 48px 0;
+  gap: 48px;
+}
+
+footer section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 18px;
+}
+
+footer section img {
+  padding-bottom: 16px;
+}
+
+@media only screen and (max-width: 1250px) {
+
+  body {
+    background-image: url("../imagens/fundo-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+  header {
+    display: flex;
+    flex-direction: row;
+    gap: 800px;
+  }
+
+  .menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+  }
+
+  .linha {
+    background-color: #FFFFFF;
+    height: 3px;
+    width: 100%;
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    left: -1216px;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: -1216px;
+  }
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+    body {
+      background-image: url("../imagens/fundo-mobile.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; 
+
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+  }
+
+    header {
+    display: flex;
+    flex-direction: row;
+    gap: 700px;
+  }
+
+   main {
+    /* background-color: #269E6D; */
+    min-width: 600px;
+  }
+
+  .container-login {
+    min-width: 100%;
+  }
+  
+  .general-login-logo {
+    min-width: 100%;
+    padding: 0 30px;
+  }
+  
 }
