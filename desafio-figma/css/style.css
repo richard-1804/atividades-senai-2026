@@ -56,7 +56,7 @@ header {
 nav {
   display: flex;
   flex-direction: row;
-  padding: 48px 40px;
+  padding-top: 48px;
 }
 
 nav ul {
@@ -66,8 +66,8 @@ nav ul {
 
 nav ul li {
   color: #FFFFFF;
-  font-size: 2em;
-  font-weight: bold;
+  font-size: 1em;
+  font-weight: 600;
   padding: 10px 32px;
   border-radius: 6px;
 }
@@ -75,16 +75,13 @@ nav ul li {
 nav ul li.destaque-header {
   background-color: #FFFFFF;
   color: #269E6D;
-  font-weight: bold;
-  padding: 10px 32px;
-  border-radius: 6px;
 }
 
 main {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 80px 0;
+  justify-content: center;
+  padding: 40px 0;
+  width: 100%;
   max-width: 1216px;
   margin: 0 auto;
   flex: 1;
@@ -94,44 +91,39 @@ main {
   background-color: #262626cc;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 64px 40px;
+  padding: 32px 40px;
   border-radius: 12px;
-  max-width: 500px;
+  max-width: 497px;
   width: 100%;
 }
 
 .container-login > a {
   color: #269E6D;
   font-size: 1em;
+  text-align: center;
 }
 
 .general-login-logo {
-  background-color: transparent;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  font-size: 1.8em;
 }
 
 .general-login-logo img {
   padding-bottom: 9px;
 }
 
-.login {
-  width: 100%;
-}
-
 .login .input-login {
   background-color: #262626;
   color: #BAACAC;
-  padding: 8px 16px;
+  padding: 12px 16px;
   border-radius: 3px;
+  border: 1px solid #414141;
   width: 100%;
 }
 
 .input-login::placeholder {
-  font-size: 0.8em;
+  font-size: 14px;
 }
 
 .login-email {
@@ -140,17 +132,21 @@ main {
 
 .login h3{
   padding-bottom: 6px;
-  font-size: 0.8em;
+  font-size: 14px;
   color: #FFFFFF;
 }
 
 .checkbox-senha {
   color: #FFFFFF;
-  font-size: 0.5em;
   display:flex;
+  align-items: center;
   gap: 8px;
   margin-top: 12px;
   cursor: pointer;
+}
+
+.checkbox-senha p {
+  font-size: 12px;
 }
 
 .general-login-logo button {
@@ -158,34 +154,42 @@ main {
   color: #FFFFFF;
   padding: 12px 0;
   margin: 46px 0 48px 0;
-  border: 5px solid #ffffff80;
+  outline: 5px solid #ffffff0f;
+  border: none;
   border-radius: 5px;
+  box-shadow: inset 0 -2px 1px #FFFFFF;
   cursor: pointer;
 }
 
 footer {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-control {
+  display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 0 auto;
+  width: 100%;
   max-width: 1216px;
   padding: 48px 0;
   gap: 48px;
+
 }
 
-footer section {
+.footer-control section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  text-align: center;
-  color: #FFFFFF;
   font-size: 18px;
+  color: #FFFFFF;
 }
 
 footer section img {
   padding-bottom: 16px;
 }
+
 
 @media only screen and (max-width: 1250px) {
 
@@ -254,7 +258,6 @@ footer section img {
   }
 
    main {
-    /* background-color: #269E6D; */
     min-width: 600px;
   }
 
@@ -268,3 +271,4 @@ footer section img {
   }
   
 }
+
