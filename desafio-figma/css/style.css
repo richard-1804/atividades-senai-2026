@@ -1,6 +1,8 @@
+/* Principal fonte do site */
 @import url('https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&display=swap');
 
-/* Código Reset no CSS */
+/* Início do Código Reset no CSS */
+
 /* 1. Remove margens e paddings padrão e define o box-sizing */
 *, *::before, *::after {
   margin: 0;
@@ -32,6 +34,9 @@ ul, ol {
   list-style: none;
 }
 
+/* Fim do Código Reset no CSS */
+
+/* Configuração do Background image + Body*/
 body {
     background-image: url("../imagens/fundo-mine.svg");
     background-repeat: no-repeat;
@@ -43,6 +48,7 @@ body {
     min-height: 100vh;
 }
 
+/* Comportamento do Header */
 header {
   display: flex;
   flex-direction: column;
@@ -53,17 +59,20 @@ header {
   margin: 0 auto;
 }
 
+/* Configuração Principal do Nav*/
 nav {
   display: flex;
   flex-direction: row;
   padding-top: 48px;
 }
 
+/* Ajuste no Nav UL */
 nav ul {
   display: flex;
   gap: 48px;
 }
 
+/* Ajuste no Nav UL Li */
 nav ul li {
   color: #FFFFFF;
   font-size: 1em;
@@ -72,17 +81,19 @@ nav ul li {
   border-radius: 6px;
 }
 
+/* Destaque do link  */
 nav ul li.destaque-header {
   background-color: #FFFFFF;
   color: #269E6D;
 }
 
+/* Configuração da Main */
 main {
   display: flex;
   justify-content: center;
   padding: 40px 0;
   width: 100%;
-  flex: 1;
+  flex: 1; /* Empurra o footer para baixo  */
 }
 
 .container-login {
