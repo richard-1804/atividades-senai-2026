@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset para Formulários */
+input, textarea, select {
+  appearance: none; /* Remove estilos padrão do sistema operacional */
+  -webkit-appearance: none;
+  width: 100%; /* Facilita o controle via Grid/Flex */
+  border: 1px solid transparent; /* Base para bordas */
+  background-color: transparent;
+  outline: none;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+    font-family: Roboto, sans-serif;
+}
+
+:root {
+
+    --bg: #121216;
+    --border-article: #00FFFF;
+    --bg-btn: #01B4B4;
+    
+    --texto-padrao: #FFFFFF;
+    --texto-p-artigo: #828282;
+    --text-input: #7C7C8A;
+
+}

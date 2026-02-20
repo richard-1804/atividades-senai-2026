@@ -9,9 +9,10 @@
 <body>
     
     <header>
-        <h1>Inovação e Tecnologia: Transformando Negócios no Mundo Digital</h1>
-
-        <p>Descubra as Últimas Novidades da Programação, Desenvolvimento de Software e Soluções Tecnológicas.</p>
+        <div class="text-header">
+            <h1>Inovação e Tecnologia: Transformando Negócios no Mundo Digital</h1>
+            <p>Descubra as Últimas Novidades da Programação, Desenvolvimento de Software e Soluções Tecnológicas.</p>
+        </div>
 
         <img src="imagens/logo-laptop-header.png" alt="Logo Laptop">
     </header>
@@ -114,24 +115,22 @@
         </article>
 
         <h2>Entre em contato conosco</h2>
-
-        <div class="box-form">
-            <form>
+        
+            <form class="form-group">
                 <input type="text" name="username" id="username" placeholder="Nome">
                 <label for="username"></label>
             </form>
 
-            <form>
-                <input type="email" name="e-mail" id="e-mail" placeholder="Email">
-                <label for="e-mail"></label>
+            <form class="form-group">
+                <input type="email" name="email" id="email" placeholder="Email">
+                <label for="email"></label>
             </form>
 
-            <form>
-                <textarea name="message" rows="4" cols="40">
-                    Mensagem
-                </textarea>
+            <form class="form-group">
+                <textarea name="message" rows="4" cols="40" placeholder="Mensagem"></textarea>
             </form>
-        </div>
+            
+            <button type="submit" class="btn-submit">Enviar</button>
     </main>
 
 </body>
