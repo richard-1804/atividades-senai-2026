@@ -18,6 +18,10 @@ input, textarea, select {
     font-family: Roboto, sans-serif;
 }
 
+/*max-width header: 1434px
+max-width container: 1251px
+*/
+
 :root {
 
     --bg: #121216;
@@ -28,4 +32,16 @@ input, textarea, select {
     --texto-p-artigo: #828282;
     --text-input: #7C7C8A;
 
+}
+
+body {
+    background-color: var(--bg);
+}
+
+header {
+    background-color: #eee;
+    display: flex;
+
+    margin: 106px auto ;
+    max-width: 1434px;
 }
