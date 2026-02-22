@@ -38,10 +38,10 @@ body {
     background-color: var(--bg);
 }
 
-header {
-    background-color: #eee;
+main h2 {
+    color: var(--texto-padrao);
+    font-weight: normal;
     display: flex;
-
-    margin: 106px auto ;
-    max-width: 1434px;
+    justify-content: center;
+    margin-bottom: 91px;
 }
