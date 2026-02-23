@@ -38,10 +38,104 @@ body {
     background-color: var(--bg);
 }
 
+header {
+    color: var(--texto-padrao);
+    display: flex;
+    align-items: center;
+    gap: 143px;
+    max-width: 1800px;
+    margin: 106px auto 84px auto;
+}
+
+.text-header {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+
+.text-header h1 {
+    font-size: 40px;
+    font-weight: 600;
+    width: 846px;
+}
+
+.text-header p {
+    font-size: 24px;
+    width: 650px;
+}
+
 main h2 {
     color: var(--texto-padrao);
+    font-size: 40px;
     font-weight: normal;
     display: flex;
     justify-content: center;
     margin-bottom: 91px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 48px 32px;
+    max-width: 1217px;
+    margin: 0 auto 75px auto;
+}
+
+.content-grid {
+    width: 384px;
+    cursor: pointer;
+}
+
+.banner {
+    height: 175px;
+}
+
+.text-grid {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 24px;
+    gap: 12px;
+    border-left: 2px solid var(--border-article);
+    border-radius: 0 0 0 6px;
+}
+
+.text-grid h3 {
+    color: var(--texto-padrao);
+}
+
+.text-grid p {
+    color: var(--texto-p-artigo);
+}
+
+.container-form {
+    display: flex;
+    flex-direction: column;
+    width: 592px;
+    margin: 0 auto 124px auto;
+}
+
+.form-group {
+    background-color: var(--texto-padrao);
+    color: var(--text-input);
+    font-size: 18px;
+    padding: 19px 24px;
+    border-radius: 4px;
+    margin-bottom: 24px;
+    cursor: text;
+}
+
+.form-message {
+    background-color: var(--texto-padrao);
+    color: var(--text-input);
+    font-size: 18px;
+    padding: 19px 24px;
+    border-radius: 4px;
+    margin-bottom: 43px;
+}
+
+.btn-submit {
+    background-color: var(--bg-btn);
+    color: var(--texto-padrao);
+    padding: 14px 32px;
+    cursor: pointer;
 }
