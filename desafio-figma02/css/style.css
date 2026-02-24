@@ -14,13 +14,9 @@ input, textarea, select {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    min-width: 0;
+    max-width: 100vw; /* Garante que nada passe da largura da tela */
     font-family: Roboto, sans-serif;
 }
-
-/*max-width header: 1434px
-max-width container: 1251px
-*/
 
 :root {
 
@@ -38,6 +34,7 @@ body {
     background-color: var(--bg);
 }
 
+/* Configuração Header */
 header {
     color: var(--texto-padrao);
     display: flex;
@@ -47,23 +44,37 @@ header {
     margin: 106px auto 84px auto;
 }
 
+.container-header {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+}
+
 .text-header {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 34px;
 }
 
 .text-header h1 {
     font-size: 40px;
     font-weight: 600;
-    width: 846px;
+    max-width: 846px;
 }
 
 .text-header p {
     font-size: 24px;
-    width: 650px;
+    max-width: 650px;
 }
 
+.logotipo {
+    display: flex;
+    align-items: center;
+    width: 641px;
+}
+
+/* Ajuste nos H2 do layout */
 main h2 {
     color: var(--texto-padrao);
     font-size: 40px;
@@ -73,23 +84,29 @@ main h2 {
     margin-bottom: 91px;
 }
 
+/* Configuração do Container Grid */
 .container {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 48px 32px;
     max-width: 1217px;
     margin: 0 auto 75px auto;
+    padding: 0 20px; 
 }
 
+/* Configuração de cada seção */
 .content-grid {
-    width: 384px;
+    max-width: 100%;
     cursor: pointer;
 }
 
-.banner {
-    height: 175px;
+.banner img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
+/* Ajuste dos textos nas seções */
 .text-grid {
     display: flex;
     flex-direction: column;
@@ -107,6 +124,7 @@ main h2 {
     color: var(--texto-p-artigo);
 }
 
+/* Configuração do Formlário */
 .container-form {
     display: flex;
     flex-direction: column;
@@ -114,6 +132,7 @@ main h2 {
     margin: 0 auto 124px auto;
 }
 
+/* Configuração do Nome e E-mail */
 .form-group {
     background-color: var(--texto-padrao);
     color: var(--text-input);
@@ -124,6 +143,7 @@ main h2 {
     cursor: text;
 }
 
+/* Caixa de Mensagem */
 .form-message {
     background-color: var(--texto-padrao);
     color: var(--text-input);
@@ -133,9 +153,135 @@ main h2 {
     margin-bottom: 43px;
 }
 
+/* Configuração do botão "Enviar" */
 .btn-submit {
     background-color: var(--bg-btn);
     color: var(--texto-padrao);
     padding: 14px 32px;
     cursor: pointer;
+}
+
+/* Responsividade para Telas com largura menos que 880px */
+@media only screen and (max-width: 880px) {
+
+    header {
+        margin: 76px auto 47px auto;
+    }
+
+    .container-header {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 82px;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-header {
+        display: flex;
+        gap: 32px;
+    }
+
+    .text-header h1 {
+        width: 558px;       
+        text-align: center;
+        font-size: 32px;
+    }
+
+    .text-header p {
+        width: 550px;
+        text-align: center;
+    }
+
+    main h2 {
+        justify-content: flex-start;
+        margin-left: 32px;
+        font-size: 28px;
+    }
+    
+    .title-article {
+        font-weight: 600;
+        margin-bottom: 52px;
+    }
+
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        margin: 0 32px 100px 32px;
+    }
+
+    .content-grid {
+        width: 335px;
+    }
+
+    .container-form {
+        width: 799px;
+        margin: 39px 32px 89px 32px;
+    }
+    
+}
+
+/* Responsividade para Telas com largura menos que 375px */
+@media only screen and (max-width: 375px) {
+
+     header {
+        margin: 56px auto 125px auto;
+    }
+
+    .container-header {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 18px;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-header {
+        display: flex;
+        gap: 24px;
+    }
+
+    .text-header h1, .text-header p {
+        width: 90%; 
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .text-header h1 {
+        font-size: 24px;
+    }
+
+    .text-header p {
+        font-size: 16px;
+    }
+
+    .logotipo {
+        width: 100%;
+        justify-content: center;
+    }
+
+     main h2 {
+        margin-left: 16px;
+    }
+
+    .title-article {
+        margin-bottom: 56px;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        margin: 0  16px 71px 16px;
+        padding: 0 20px;
+    }
+
+    .content-grid {
+        max-width: 310px;
+        width: 100%;
+    }
+
+    .container-form {
+        width: 90%;
+        margin: 0 auto 62px auto;
+    }
+    
 }

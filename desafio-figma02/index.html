@@ -7,22 +7,27 @@
     <title>Desafio Figma 02 | Daniel Richard</title>
 </head>
 <body>
-    
-    <header>
-            <div class="text-header">
-                <h1>Inovação e Tecnologia: Transformando Negócios no Mundo Digital</h1>
-                <p>Descubra as Últimas Novidades da Programação, Desenvolvimento de Software e Soluções Tecnológicas.</p>
-            </div>
 
-        <div class="logotipo"><img src="imagens/logo-laptop-header.png" alt="Logo Laptop"></div>
+    <!-- Cabeçalho do site -->
+    <header>
+            <div class="container-header">
+
+                <div class="text-header">
+                    <h1>Inovação e Tecnologia: Transformando Negócios no Mundo Digital</h1>
+                    <p>Descubra as Últimas Novidades da Programação, Desenvolvimento de Software e Soluções Tecnológicas.</p>
+                </div>
+                
+                <div class="logotipo"><img src="imagens/logo-laptop-header.png" alt="Logo Laptop"></div>
+            </div>
     </header>
 
+    <!-- Conteúdo Principal -->
     <main>
-        <h2>Artigos recomendados</h2>
+        <h2 class="title-article">Artigos recomendados</h2>
 
-        <article class="container">
+        <article class="container"> <!-- Contém as notícias -->
             
-            <section class="content-grid">
+            <section class="content-grid"> <!-- Seção de Cada notícia com as mesmas cofigurações -->
 
                 <div class="banner"><img src="imagens/banner-01.svg" alt="Imagem do Artigo"></div>
 
@@ -132,22 +137,27 @@
 
         </article>
 
+        <!-- Seção do Formulário -->
         <h2>Entre em contato conosco</h2>
         
-            <article class="container-form">
+            <article class="container-form"> <!-- Conteiner do Formuolário-->
 
-                <form class="form-group">
+                <form class="form-group"> <!-- Grupo com as mesmas configurações -->
                     <input type="text" name="username" id="username" placeholder="Nome">
                     <label for="username"></label>
                 </form>
+
                 <form class="form-group">
                     <input type="email" name="email" id="email" placeholder="Email">
                     <label for="email"></label>
                 </form>
+
+                <!-- Configurações da caixa mensagem -->
                 <form class="form-message">
                     <textarea name="message" rows="4" cols="40" placeholder="Mensagem"></textarea>
                 </form>
                 
+                <!-- Botão de Enviar -->
                 <button type="submit" class="btn-submit">Enviar</button>
                 
             </article>
