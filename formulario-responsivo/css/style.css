@@ -32,6 +32,20 @@ article {
     margin: 15px 0;
 }
 
+#feedback {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+#mensagem-erro {
+    display: flex;
+    justify-content: center;
+    color: red;
+    font-size: 20px;
+}
+
  .dados-pessoais, .regiao, .genero, .area, .resumo {
     margin: 20px 0;
 }
@@ -43,7 +57,7 @@ article {
 }
 
 .dados-pessoais > form > label {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 500;
     margin-bottom: 5px;
 }
