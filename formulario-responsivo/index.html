@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulário Responsivo | Daniel Richard</title>
+</head>
+<body>
+    
+    <main>
+        <article>
+            
+            <section class="container-form">
+
+                <h1 id="title-form">Cadastro</h1>
+
+                <div class="dados-pessoais">
+                    <h2>Dados Pessoais</h2>
+
+                    <form>
+                        <label for="username">Nome Completo:</label>
+                        <input type="text" name="username" id="username" placeholder="Digite seu nome...">
+                    </form>
+                    
+                    <form>
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+                    </form>
+
+                    <form>
+                        <label for="nascimento">Data de Nascimento:</label>
+                        <input type="date" name="nascimento" id="nascimento">
+                    </form>
+
+                    <form>
+                        <label for="senha">Digite sua Senha:</label>
+                        <input minlength="8" type="password" name="senha" id="senha" placeholder="Digite sua senha">
+                    </form>
+                </div>
+
+                <div class="regiao">
+                    <h2>Região</h2>
+                    <select name="opitions" id="estados">
+                        <option value="1">Acre (AC)</option>
+                        <option value="2">Amapá (AP)</option>
+                        <option value="3">Amazonas (AM)</option>
+                        <option value="4">Pará (PA)</option>
+                        <option value="5">Rondônia (RO)</option>
+                        <option value="6">Roraima (RR)</option>
+                        <option value="7">Tocantins (TO)</option>
+                        <option value="8">Alagoas (AL)</option>
+                        <option value="9">Bahia (BA)</option>
+                        <option value="10">Ceará (CE)</option>
+                        <option value="11">Maranhão (MA)</option>
+                        <option value="12">Paraíba (PB)</option>
+                        <option value="13">Pernambuco (PE)</option>
+                        <option value="14">Piauí (PI)</option>
+                        <option value="15">Rio Grande do Norte (RN)</option>
+                        <option value="16">Sergipe (SE)</option>
+                        <option value="17">Distrito Federal (DF)</option>
+                        <option value="18">Goiás (GO)</option>
+                        <option value="19">Mato Grosso (MT)</option>
+                        <option value="20">Mato Grosso do Sul (MS)</option>
+                        <option value="21">Espírito Santo (ES)</option>
+                        <option value="22">Minas Gerais (MG)</option>
+                        <option value="23">Rio de Janeiro (RJ)</option>
+                        <option value="24">São Paulo (SP)</option>
+                        <option value="25">Paraná (PR)</option>
+                        <option value="26">Rio Grande do Sul (RS)</option>
+                        <option value="27">Santa Catarina (SC)</option>
+                    </select>
+                </div>
+
+                <div class="genero">
+                    <h2>Gênero</h2>
+
+                    <form>
+                        <span class="opcao-genero">
+                            <input type="radio" name="genero" id="masculino">
+                            <label for="masculino">Masculino</label>
+                        </span>
+
+                        <span class="opcao-genero">
+                            <input type="radio" name="genero" id="feminino">
+                            <label for="feminino">Feminino</label>
+                        </span>
+
+                        <span class="opcao-genero">
+                            <input type="radio" name="genero" id="outro">
+                            <label for="outro">Outro</label>
+                        </span>
+                    </form>
+                </div>
+
+                <div class="area">
+                    <h2>Área de Interrese</h2>
+                    <form>
+                        <span class="opcao-genero">
+                            <input type="checkbox" name="interesse" id="html">
+                            <label for="html">HTML</label>
+                        </span>
+
+                        <span class="opcao-genero">
+                            <input type="checkbox" name="interesse" id="css">
+                            <label for="css">CSS</label>
+                        </span>
+
+                        <span class="opcao-genero">
+                            <input type="checkbox" name="interesse" id="js">
+                            <label for="js">JavaScript</label>
+                        </span>
+
+                        <span class="opcao-genero">
+                            <input type="checkbox" name="interesse" id="design">
+                            <label for="design">Design</label>
+                        </span>
+                    </form>
+                </div>
+
+                <div class="resumo">
+                    <h2>Biografia</h2>
+                    <textarea name="message" id="biografia" maxlength="500" rows="6" cols="50" placeholder="Digite seu texto (máx 500 caracteres)..."></textarea>
+                </div>
+
+                <button type="submit" id="btn-submit">Finalizar Cadastro</button>
+
+            </section>
+        </article>
+    </main>
+
+    <script src="javaScript/script.js"></script>
+
+</body>
+</html>
