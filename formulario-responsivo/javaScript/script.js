@@ -11,8 +11,14 @@ const userSenha = document.getElementById('senha');
 
 // Outras Informações
 const estado = document.getElementById('estados');
-const genero = document.getElementsByClassName('genero');
-const area = document.getElementsByClassName('area');
+const genero1 = document.getElementById('masculino');
+const genero2 = document.getElementById('feminino');
+const genero3 = document.getElementById('outro');
+
+const area1 = document.getElementById('html');
+const area2 = document.getElementById('css');
+const area3 = document.getElementById('js');
+const area4 = document.getElementById('design');
 const bio = document.getElementById('biografia');
 
 // Botão
@@ -21,7 +27,10 @@ const botao = document.getElementById('btn-submit');
 // Função para quando o botão "Finalizar Cadastro" for clicado
 botao.addEventListener('click', function() {
 
-   if (userName.value === "" || userEmail.value === "" || userNascimento.value === "" || userSenha.value === "" || estado.value === "" || genero.checked === "" || area.checked === "" || bio.value === "") {
+   const generoMarcado = genero1.checked || genero2.checked || genero3.checked;
+   const areaMarcada = area1.checked || area2.checked || area3.checked || area4.checked;
+
+   if (userName.value === "" || userEmail.value === "" || userNascimento.value === "" || userSenha.value === "" || estado.value === "" || !generoMarcado || !areaMarcada || bio.value === "") {
 
     formError.textContent = "Preencha TODOS os CAMPOS corretamente";
 
