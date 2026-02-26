@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Crachá TechNova | Daniel Richard</title>
+</head>
+<body>
+
+    <main>
+        <article class="container">
+
+            <section class="dados-principais">
+
+                <h1>Dados do Colaborador</h1>
+
+                <form id="form-dados-group">
+
+                    <input type="text" name="username" id="username" placeholder="Nome Completo">
+
+                    <input type="text" name="cargo" id="cargo" placeholder="Cargo">
+
+                    <select name="opitions" id="opcoes">
+                        <option value="1">Desenvolvimento</option>
+                        <option value="2">Design</option>
+                        <option value="3">Marketing</option>
+                    </select>
+
+                </form>
+                
+                <button type="submit" id="btn-gerar">Gerar Crachá</button>
+
+            </section>
+
+            <section class="cracha-container">
+
+                <div class="foto-cracha">
+
+                    <h2 id="nome-cracha">Nome do Funcionário</h2>
+                    <p id="cargo-cracha">Cargo</p>
+                    <h3 id="dep">Departamento</h3>
+
+                </div>
+
+            </section>
+
+        </article>
+    </main>
+    
+    <script src="javascript/script.js"></script>
+</body>
+</html>
