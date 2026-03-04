@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+:root {
+
+    --bg: #000000;
+    --card: #1F1F1F;
+    --infoSec: #2A2A2A;
+    --fonteNormal: #B3B3B3;
+    --padrao: #ffffff;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+.header-principal {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.icon-spotify {
+    width: 52px;
+    height: 52px;
+}
+.input-home {
+    display: flex;
+    flex: 1;
+}
+
+.input-home input {
+    background-color: var(--infoSec);
+    width: 100%;
+    margin-right: 10px;
+    border-radius: 25px;
+    border: none; 
+}
+
+.input-home > input::placeholder {
+    padding: 10px;
+}
+
+.icon-home {
+    background-color: var(--infoSec);
+    border-radius: 50%;
+    margin: 0 10px 0 20px;
+    padding: 10px;
+    width: 52px;
+    height: 52px;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    gap: 16px;
+}
+
+nav ul li {
+    color: var(--fonteNormal);
+}
+
+nav a {
+    color: var(--fonteNormal);
+    text-decoration: none;
+}
+
+.icon-install {
+    display: flex;
+    gap: 5px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.btn-header-entrar {
+    background-color: var(--padrao);
+    font-weight: 600;
+    border-radius: 25px;
+    border: none;
+    padding: 15px 30px;
+}
