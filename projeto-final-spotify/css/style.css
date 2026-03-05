@@ -23,8 +23,8 @@ body {
 .header-principal {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 10px;
-    margin: 10px auto;
 }
 
 .icon-spotify {
@@ -33,19 +33,41 @@ body {
 }
 .input-home {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex: 1;
+    max-width: 800px;
 }
 
-.input-home input {
+.input-total {
+    display: flex;
     background-color: var(--infoSec);
+    align-items: center;
     width: 100%;
+    border-radius: 50px;
+    padding: 4px 15px;
     margin-right: 10px;
-    border-radius: 25px;
-    border: none; 
 }
 
-.input-home > input::placeholder {
-    padding: 10px;
+.lupa {
+    margin: 0 15px;
+    width: 42px;
+}
+
+.input-total input {
+    background-color: transparent;
+    padding: 5px;
+    border: none;
+    width: 100%;
+}
+
+.input-total input::placeholder {
+    font-size: 1rem;
+}
+
+.cesta {
+    width: 45px;
+    margin-top: 10px;
 }
 
 .icon-home {
@@ -91,4 +113,69 @@ nav a {
     border-radius: 25px;
     border: none;
     padding: 15px 30px;
+}
+
+main {
+    margin: 0 28px;
+}
+
+.side-content {
+    background-color: beige;
+}
+
+.musica-alta {
+    background-color: var(--card);
+    display: grid;
+}
+
+.titulo-artigo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo-artigo h1 {
+    font-weight: 600;
+    color: var(--padrao);
+}
+
+.titulo-artigo p {
+    font-weight: 500;
+    color: var(--fonteNormal);
+}
+
+.musica {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.musica figure {
+    display: flex;
+    flex-direction: column;
+}
+
+.musica figure > img {
+    width: 200px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+ .musica figcaption {
+    display: flex;
+    flex-direction: column;
+}
+
+.musica figcaption > strong {
+    font-weight: 600;
+    color: var(--padrao);
+    margin-bottom: 10px;
+}
+
+.musica figcaption > span {
+    color: var(--fonteNormal);
+}
+
+.artistas-populares {
+    background-color: lightgrey;
 }
