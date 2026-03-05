@@ -10,6 +10,7 @@
 :root {
 
     --bg: #000000;
+    --bgCard: #313131;
     --card: #1F1F1F;
     --infoSec: #2A2A2A;
     --fonteNormal: #B3B3B3;
@@ -116,38 +117,133 @@ nav a {
 }
 
 main {
-    margin: 0 28px;
+    display: flex;
+    width: 100%;
+    gap: 10px;
 }
 
 .side-content {
-    background-color: beige;
+    background-color: var(--card);
+    flex: 1;
+    min-width: 350px;
+    max-width: 450px;
+    margin: 22px 0 0 10px;
+    border-radius: 10px;
 }
 
-.musica-alta {
+.side-content > header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 16px 8px;
+}
+
+.icon-add {
+    background-color: var(--bgCard);
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.side-cards-content {
+    background-color: var(--bgCard);
+    padding: 16px 20px;
+    margin: 8px;
+    border-radius: 10px;
+}
+
+#space {margin-bottom: 24px;}
+
+.side-btn-content {
+    background-color: var(--padrao);
+    font-weight: 600;
+    border-radius: 25px;
+    border: none;
+    padding: 4px 16px;
+    margin-top: 15px;
+}
+
+.side-content h1 {
+    color: var(--padrao);
+    font-size: 1rem;
+}
+
+.side-content p {
+    color: var(--padrao);
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.links {
+    color: var(--fonteNormal);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 11px;
+    font-weight: normal;
+    padding: 20px;
+}
+
+#destaque {
+    color: var(--padrao);
+    padding-left: 20px;
+    font-size: 12px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
     background-color: var(--card);
-    display: grid;
+    max-width: 1450px;
+    width: 100%;
+    margin: 22px 28px 0 0;
+    border-radius: 10px;
 }
 
 .titulo-artigo {
+    background-color: var(--card);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 10px;
+    border-radius: 10px;
 }
 
 .titulo-artigo h1 {
     font-weight: 600;
     color: var(--padrao);
+    cursor: pointer;
+}
+
+.titulo-artigo h1:hover {
+    text-decoration: underline;
 }
 
 .titulo-artigo p {
     font-weight: 500;
     color: var(--fonteNormal);
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.titulo-artigo p:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--padrao);
+}
+
+.musica-alta {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    margin-bottom: 45px;
 }
 
 .musica {
     display: flex;
     flex-direction: column;
     padding: 10px;
+    max-width: 200px;
+    cursor: pointer;
 }
 
 .musica figure {
@@ -156,7 +252,8 @@ main {
 }
 
 .musica figure > img {
-    width: 200px;
+    
+    width: 100%;
     border-radius: 5px;
     margin-bottom: 5px;
 }
@@ -177,5 +274,43 @@ main {
 }
 
 .artistas-populares {
-    background-color: lightgrey;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+.artistas {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    max-width: 200px;
+    cursor: pointer;
+}
+
+.artistas figure {
+    display: flex;
+    flex-direction: column;
+}
+
+.artistas figure > img {
+    height: 180px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+ .artistas figcaption {
+    display: flex;
+    flex-direction: column;
+}
+
+.artistas figcaption > strong {
+    font-weight: 600;
+    color: var(--padrao);
+    margin-bottom: 10px;
+}
+
+.artistas figcaption > span {
+    color: var(--fonteNormal);
 }
