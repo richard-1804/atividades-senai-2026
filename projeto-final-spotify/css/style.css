@@ -145,6 +145,17 @@ main {
 }
 
 .side-cards-content {
+    padding: 20px 8px 8px;
+}
+
+.create-playlist {
+    background-color: var(--bgCard);
+    padding: 16px 20px;
+    margin: 8px;
+    border-radius: 10px;
+}
+
+.create-podcast {
     background-color: var(--bgCard);
     padding: 16px 20px;
     margin: 8px;
@@ -179,15 +190,38 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 15px;
-    font-size: 11px;
     font-weight: normal;
-    padding: 20px;
+    padding: 20px 20px 15px;
+}
+
+.links h3 {
+    font-size: 11px;
 }
 
 #destaque {
     color: var(--padrao);
     padding-left: 20px;
     font-size: 12px;
+}
+
+.languague {
+    display: flex;
+    max-width: 200px;
+    border: 1px solid var(--padrao);
+    border-radius: 50px;
+    margin: 32px 0 32px 20px;
+    padding: 5px;
+}
+
+.languague img {
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+}
+
+.languague h2 {
+    color: var(--padrao);
+    font-size: 14px;
 }
 
 .container {
@@ -231,86 +265,56 @@ main {
     text-decoration-color: var(--padrao);
 }
 
-.musica-alta {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+.musica-alta, .artistas-populares {
+    display: flex;
     gap: 15px;
     margin-bottom: 45px;
+    overflow-x: auto;
 }
 
-.musica {
+.musica-alta::-webkit-scrollbar, .artistas-populares::-webkit-scrollbar {
+    display: none;
+}
+
+.musica, .artistas {
     display: flex;
     flex-direction: column;
+    flex-shrink: 0;
     padding: 10px;
     max-width: 200px;
     cursor: pointer;
 }
 
-.musica figure {
+.musica, .artistas figure {
     display: flex;
     flex-direction: column;
 }
 
 .musica figure > img {
-    
     width: 100%;
     border-radius: 5px;
     margin-bottom: 5px;
 }
 
- .musica figcaption {
-    display: flex;
-    flex-direction: column;
-}
-
-.musica figcaption > strong {
-    font-weight: 600;
-    color: var(--padrao);
-    margin-bottom: 10px;
-}
-
-.musica figcaption > span {
-    color: var(--fonteNormal);
-}
-
-.artistas-populares {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 15px;
-}
-
-.artistas {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    max-width: 200px;
-    cursor: pointer;
-}
-
-.artistas figure {
-    display: flex;
-    flex-direction: column;
-}
-
 .artistas figure > img {
     height: 180px;
-    object-fit: cover;
     width: 100%;
+    object-fit: cover;
     border-radius: 50%;
     margin-bottom: 5px;
 }
 
- .artistas figcaption {
+ .musica, .artistas figcaption {
     display: flex;
     flex-direction: column;
 }
 
-.artistas figcaption > strong {
+.musica, .artistas figcaption > strong {
     font-weight: 600;
     color: var(--padrao);
     margin-bottom: 10px;
 }
 
-.artistas figcaption > span {
+.musica, .artistas figcaption > span {
     color: var(--fonteNormal);
 }
