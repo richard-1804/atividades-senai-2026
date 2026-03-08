@@ -124,9 +124,10 @@ main {
 
 .side-content {
     background-color: var(--card);
-    flex: 1;
-    min-width: 350px;
-    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    width: 400px;
     margin: 22px 0 0 10px;
     border-radius: 10px;
 }
@@ -229,6 +230,7 @@ main {
     flex-direction: column;
     background-color: var(--card);
     max-width: 1450px;
+    min-width: 750px;
     width: 100%;
     margin: 22px 28px 0 0;
     border-radius: 10px;
@@ -281,7 +283,7 @@ main {
     flex-direction: column;
     flex-shrink: 0;
     padding: 10px;
-    max-width: 200px;
+    width: 200px;
     cursor: pointer;
 }
 
@@ -317,4 +319,33 @@ main {
 
 .musica, .artistas figcaption > span {
     color: var(--fonteNormal);
+}
+
+.anuncio {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;;
+
+    background-image: linear-gradient(90deg, #A62E9E, #8B56BF, #777CD9, #52A8F2);
+
+    padding: 11px 24px 7px 15px;
+    margin: 10px 28px 0 10px;
+    border-radius: 10px;
+}
+
+.texto-anuncio h1 {
+    color: var(--padrao);
+    font-size: 14px;
+}
+
+.texto-anuncio p {
+    color: var(--padrao);
+    font-size: 16px;
+}
+
+.btn-anuncio {
+    border-radius: 50px;
+    border: none;
+    font-weight: 600;
+    padding: 8px 32px;
 }
