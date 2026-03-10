@@ -344,6 +344,27 @@ main {
     text-decoration-color: var(--padrao);
 }
 
+#seta-e, #seta-d {
+    /* display: none; */
+    background-color: var(--infoSec);
+    position: absolute;
+    top: 160px;
+
+    padding: 10px;
+    width: 50px;
+    border-radius: 50%;
+    opacity: .8;
+    cursor: pointer;
+}
+
+#seta-e {
+    margin-left: 10px;
+}
+
+#seta-d {
+    right: 36px;
+}
+
 .musica-alta {
     display: flex;
     gap: 15px;
