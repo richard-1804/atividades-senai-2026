@@ -11,10 +11,15 @@
 
     --bg: #000000;
     --bgCard: #313131;
+
     --card: #1F1F1F;
+    --cardHover: #2b2b2b;
+
     --infoSec: #2A2A2A;
     --fonteNormal: #B3B3B3;
     --padrao: #ffffff;
+
+    --btnHover: #F0F0F0;
 }
 
 body {
@@ -31,6 +36,7 @@ body {
 .icon-spotify {
     width: 52px;
     height: 52px;
+    cursor: pointer;
 }
 .input-home {
     display: flex;
@@ -38,6 +44,7 @@ body {
     justify-content: center;
     flex: 1;
     max-width: 800px;
+    cursor: text;
 }
 
 .input-total {
@@ -50,9 +57,18 @@ body {
     margin-right: 10px;
 }
 
+.input-total:hover {
+    background-color: #393939;
+}
+
 .lupa {
-    margin: 0 15px;
+    margin: 0 10px;
     width: 42px;
+    cursor: pointer;
+}
+
+.lupa:hover {
+    width: 45px;
 }
 
 .input-total input {
@@ -69,6 +85,11 @@ body {
 .cesta {
     width: 45px;
     margin-top: 10px;
+    cursor: pointer;
+}
+
+.cesta:hover {
+    width: 47px;
 }
 
 .icon-home {
@@ -78,6 +99,12 @@ body {
     padding: 10px;
     width: 52px;
     height: 52px;
+    cursor: pointer;
+}
+
+.icon-home:hover {
+    width: 55px;
+    height: 55px;
 }
 
 nav {
@@ -99,6 +126,13 @@ nav ul li {
 nav a {
     color: var(--fonteNormal);
     text-decoration: none;
+    cursor: pointer;
+}
+
+nav a:hover {
+    color: var(--padrao);
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .icon-install {
@@ -114,10 +148,29 @@ nav a {
     border-radius: 25px;
     border: none;
     padding: 15px 30px;
+    cursor: pointer;
+}
+
+.btn-header-entrar:hover {
+    background-color: var(--btnHover);
+    font-size: 14px;
 }
 
 main {
+    position: relative;
     display: flex;
+    flex-direction: column;
+    align-items: stretch;    
+
+    width: 100%;
+    padding-bottom: 90px;
+    gap: 10px;
+
+}
+
+.conteudo-principal{
+    display: flex;
+    align-items: stretch;
     width: 100%;
     gap: 10px;
 }
@@ -126,7 +179,8 @@ main {
     background-color: var(--card);
     display: flex;
     flex-direction: column;
-    align-self: flex-start;
+
+    min-height: 80vh;
     width: 400px;
     margin: 22px 0 0 10px;
     border-radius: 10px;
@@ -143,10 +197,17 @@ main {
     background-color: var(--bgCard);
     padding: 8px;
     border-radius: 50%;
+    cursor: pointer;
+}
+
+.icon-add:hover {
+    background-color: #282828;
 }
 
 .side-cards-content {
     padding: 20px 8px 8px;
+    flex-grow: 1;
+    cursor: default;
 }
 
 .create-playlist {
@@ -172,6 +233,12 @@ main {
     border: none;
     padding: 4px 16px;
     margin-top: 15px;
+    cursor: pointer;
+}
+
+.side-btn-content:hover {
+    background-color: var(--btnHover);
+    font-size: 14px;
 }
 
 .side-content h1 {
@@ -193,6 +260,7 @@ main {
     gap: 15px;
     font-weight: normal;
     padding: 20px 20px 15px;
+    cursor: pointer;
 }
 
 .links h3 {
@@ -203,15 +271,21 @@ main {
     color: var(--padrao);
     padding-left: 20px;
     font-size: 12px;
+    cursor: pointer;
+}
+
+#destaque:hover {
+    text-decoration: underline;
 }
 
 .languague {
     display: flex;
     max-width: 200px;
-    border: 1px solid var(--padrao);
+    border: 1px solid #F0F0F0;
     border-radius: 50px;
     margin: 32px 0 32px 20px;
     padding: 5px;
+    cursor: pointer;
 }
 
 .languague img {
@@ -225,11 +299,14 @@ main {
     font-size: 14px;
 }
 
+.languague h2:hover {
+    font-size: 15px;
+}
+
 .container {
+    background-color: var(--card);
     display: flex;
     flex-direction: column;
-    background-color: var(--card);
-    max-width: 1450px;
     min-width: 750px;
     width: 100%;
     margin: 22px 28px 0 0;
@@ -267,10 +344,16 @@ main {
     text-decoration-color: var(--padrao);
 }
 
-.musica-alta, .artistas-populares {
+.musica-alta {
     display: flex;
     gap: 15px;
     margin-bottom: 45px;
+    overflow-x: auto;
+}
+
+.artistas-populares {
+    display: flex;
+    gap: 15px;
     overflow-x: auto;
 }
 
@@ -287,7 +370,13 @@ main {
     cursor: pointer;
 }
 
-.musica, .artistas figure {
+.musica:hover, .artistas:hover {
+    background-color: var(--cardHover);
+    border-radius: 5px;
+    transition-duration: .3s;
+}
+
+.musica figure, .artistas figure {
     display: flex;
     flex-direction: column;
 }
@@ -306,19 +395,27 @@ main {
     margin-bottom: 5px;
 }
 
- .musica, .artistas figcaption {
+.musica figcaption, .artistas figcaption {
     display: flex;
     flex-direction: column;
 }
 
-.musica, .artistas figcaption > strong {
+.musica figcaption > strong, .artistas figcaption > strong {
     font-weight: 600;
     color: var(--padrao);
     margin-bottom: 10px;
 }
 
-.musica, .artistas figcaption > span {
+.musica figcaption > strong:hover, .artistas figcaption > strong:hover {
+    text-decoration: underline;
+}
+
+.musica figcaption > span, .artistas figcaption > span {
     color: var(--fonteNormal);
+}
+
+.musica figcaption > span:hover, .artistas figcaption > span:hover {
+    text-decoration: underline;
 }
 
 .anuncio {
@@ -329,8 +426,14 @@ main {
     background-image: linear-gradient(90deg, #A62E9E, #8B56BF, #777CD9, #52A8F2);
 
     padding: 11px 24px 7px 15px;
-    margin: 10px 28px 0 10px;
     border-radius: 10px;
+    cursor: pointer;
+    
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    right: 28px;
+
 }
 
 .texto-anuncio h1 {
@@ -348,4 +451,10 @@ main {
     border: none;
     font-weight: 600;
     padding: 8px 32px;
+    cursor: pointer;
+}
+
+.btn-anuncio:hover {
+    background-color: #e2e1e1;
+    font-size: 14px;
 }
