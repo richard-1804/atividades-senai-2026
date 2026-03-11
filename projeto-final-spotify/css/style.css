@@ -345,8 +345,8 @@ main {
 }
 
 #seta-e, #seta-d {
-    /* display: none; */
     background-color: var(--infoSec);
+    display: none;
     position: absolute;
     top: 160px;
 
@@ -355,13 +355,28 @@ main {
     border-radius: 50%;
     opacity: .8;
     cursor: pointer;
+    z-index: 3;
 }
 
-#seta-e {
+#seta-e-b, #seta-d-b {
+    background-color: var(--infoSec);
+    display: none;
+    position: absolute;
+    bottom: 310px;
+
+    padding: 10px;
+    width: 50px;
+    border-radius: 50%;
+    opacity: .8;
+    cursor: pointer;
+    z-index: 3;
+}
+
+#seta-e, #seta-e-b {
     margin-left: 10px;
 }
 
-#seta-d {
+#seta-d, #seta-d-b {
     right: 36px;
 }
 
@@ -386,6 +401,7 @@ main {
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
+    position: relative;
     padding: 10px;
     width: 200px;
     cursor: pointer;
@@ -394,7 +410,31 @@ main {
 .musica:hover, .artistas:hover {
     background-color: var(--cardHover);
     border-radius: 5px;
-    transition-duration: .3s;
+}
+
+
+.musica:hover::after, .artistas:hover::after {
+    content: '▶︎';
+    background-color: #3BE276;
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.musica:hover::after {
+    top: 130px;
+    right: 20px;
+}
+
+.artistas:hover::after {
+    top: 120px;
+    right: 40px;
 }
 
 .musica figure, .artistas figure {
