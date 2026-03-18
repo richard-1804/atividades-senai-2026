@@ -362,7 +362,7 @@ main {
     background-color: var(--infoSec);
     display: none;
     position: absolute;
-    bottom: 310px;
+    bottom: 285px;
 
     padding: 10px;
     width: 50px;
