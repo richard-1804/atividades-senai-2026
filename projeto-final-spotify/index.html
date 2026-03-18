@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="icones/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="icones/favicon.svg" type="image/x-icon"> <!-- Link do favicon -->
     <link rel="stylesheet" href="css/style.css">
     <title>Projeto Final Spotify | Daniel Richard</title>
 </head>
 <body>
-    <header class="header-principal">
+    <header class="header-principal"> <!-- Cabeçalho principal do site -->
 
+        <!-- Ícones + forms de input -->
         <img src="icones/icon-spotify.ico" alt="icon spotify" class="icon-spotify">
 
         <section class="input-home">
@@ -24,7 +25,7 @@
             </form>
         </section>
 
-        <nav>
+        <nav> <!-- Barra de navegação do site -->
             <ul>
                 <li><a href="#">Premium</a></li>
                 <li><a href="#">Suporte</a></li>
@@ -46,28 +47,34 @@
 
     </header>
 
-    <main>   
+    <main> <!-- Conteúdo Principal do sie + Organização em colunas e linhas -->
 
-            <div class="conteudo-principal">
+            <div class="conteudo-principal"> <!-- Contém as duas colunas principais do site: -->
                 
-                <article class="side-content">
+                <article class="side-content"> <!-- Conteúdo lateral (biblioteca) -->
+
                     <header>
                         <h1>Sua Biblioteca</h1>
                         <img src="icones/icon-add.svg" alt="icon-add" class="icon-add">
                     </header>
-                    <section class="side-cards-content">
+
+                    <section class="side-cards-content"> <!-- Cardes de playlist e podcasts -->
+
                         <section class="create-playlist" id="space">
                             <h1>Crie sua primeira playlist</h1>
                             <p>É fácil, vamos te ajudar.</p>
                             <button type="button" class="side-btn-content">Criar playlist</button>
                         </section>
+
                         <section class="create-podcast">
                             <h1>Que tal seguir um podcast novo?</h1>
                             <p>Avisaremos você sobre novos episódios.</p>
                             <button type="button" class="side-btn-content">Explore podcasts</button>
                         </section>
+
                     </section>
-                    <section class="links">
+
+                    <section class="links"> 
                         <h3>Legal</h3>
                         <h3>Segurança e Centro de privacidade</h3>
                         <h3>Política de privacidade</h3>
@@ -77,27 +84,29 @@
                     </section>
                 
                     <h3 id="destaque">Cookies</h3>
+
                     <div class="languague">
                         <img src="icones/icon-lang.png" alt="icon-lang">
                         <h2>Português do Brasil</h2>
                     </div>
+
                 </article>
 
-                <article class="container">
+                <article class="container"> <!-- Contém as músicas e os artistas -->
 
                     <div class="titulo-artigo">
                         <h1>Feito para você</h1>
                         <p>Mostrar tudo</p>
                     </div>
 
-                    <div class="carrosel-container">
+                    <div class="carrosel-container"> <!-- Verifica a entrada e saída do mouse para ativar as setas -->
 
                             <img src="icones/seta-esquerda.svg" alt="seta Esquerda" id="seta-e">
                             <img src="icones/seta-direita.svg" alt="seta Direita" id="seta-d">     
                         
-                        <article class="musica-alta">
+                        <article class="musica-alta"> <!-- Os cards das músicas ganham rolagem lateral aqui -->
 
-                            <section class="musica">
+                            <section class="musica"> <!-- Músicas individuais -->
                                 <figure>
                                     <img src="imagens/Anjo-que-desce.jpg" alt="capa" class="capa">
                                     <figcaption>
@@ -106,6 +115,7 @@
                                     </figcaption>
                                 </figure>
                             </section>
+
                             <section class="musica">
                                 <figure>
                                     <img src="imagens/arde-outra-vez.jpg" alt="capa" class="capa">
@@ -115,6 +125,7 @@
                                     </figcaption>
                                 </figure>
                             </section>
+
                             <section class="musica">
                                 <figure>
                                     <img src="imagens/Espirito-Santo.jpg" alt="capa" class="capa">
@@ -124,6 +135,7 @@
                                     </figcaption>
                                 </figure>
                             </section>
+
                             <section class="musica">
                                 <figure>
                                     <img src="imagens/eu-vou-orar.jpg" alt="capa" class="capa">
@@ -133,6 +145,7 @@
                                     </figcaption>
                                 </figure>
                             </section>
+
                             <section class="musica">
                                 <figure>
                                     <img src="imagens/teus-sonhos.jpg" alt="capa" class="capa">
@@ -142,6 +155,7 @@
                                     </figcaption>
                                 </figure>
                             </section>
+
                             <section class="musica">
                                 <figure>
                                     <img src="imagens/quao-lindo-esse-nome-e.jpg" alt="capa" class="capa">
@@ -151,6 +165,7 @@
                                     </figcaption>
                                 </figure>
                             </section>
+
                             <section class="musica">
                                 <figure>
                                     <img src="imagens/atos-2.jpg" alt="capa" class="capa">
@@ -160,6 +175,7 @@
                                     </figcaption>
                                 </figure>
                             </section>
+
                             <section class="musica">
                                 <figure>
                                     <img src="imagens/imagens-circle/verdade-circle.jpg" alt="capa" class="capa">
@@ -169,6 +185,7 @@
                                     </figcaption>
                                 </figure>
                             </section>
+
                             <section class="musica">
                                 <figure>
                                     <img src="imagens/em-teus-bracos.jpg" alt="capa" class="capa">
@@ -178,6 +195,7 @@
                                     </figcaption>
                                 </figure>
                             </section>
+
                             <section class="musica">
                                 <figure>
                                     <img src="imagens/autor-da-vida.jpg" alt="capa" class="capa">
@@ -187,6 +205,7 @@
                                     </figcaption>
                                 </figure>
                             </section>
+
                             <section class="musica">
                                 <figure>
                                     <img src="imagens/EspiritoSanto.jpg" alt="capa" class="capa">
@@ -196,6 +215,7 @@
                                     </figcaption>
                                 </figure>
                             </section>
+
                             <section class="musica">
                                 <figure>
                                     <img src="imagens/poderoso-DEUS.jpg" alt="capa" class="capa">
@@ -205,6 +225,7 @@
                                     </figcaption>
                                 </figure>
                             </section>
+
                             <section class="musica">
                                 <figure>
                                     <img src="imagens/aquieta.jpg" alt="capa" class="capa">
@@ -224,13 +245,13 @@
                         <p>Mostrar tudo</p>
                     </div>
 
-                    <div class="carrosel-container-2">
+                    <div class="carrosel-container-2"> <!--  Também verifica a entrada e saída do mouse para ativar as setas -->
 
                         <img src="icones/seta-esquerda.svg" alt="seta Esquerda" id="seta-e-b">
                         <img src="icones/seta-direita.svg" alt="seta Direita" id="seta-d-b">
 
                         <article class="artistas-populares">
-                            <section class="artistas">
+                            <section class="artistas"> <!-- Funciona da mesma forma que os cards de músicas -->
                                 <figure>
                                     <img src="imagens/imagens-circle/max-circle.jpg" alt="foto do artista" class="foto-artista">
                                     <figcaption>
@@ -348,6 +369,7 @@
                                     </figcaption>
                                 </figure>
                             </section>
+                            
                             <section class="artistas">
                                 <figure>
                                     <img src="imagens/imagens-circle/renascer-circle.jpg" alt="foto do artista" class="foto-artista">
@@ -366,7 +388,7 @@
 
             </div>
 
-        <aside class="anuncio">
+        <aside class="anuncio"> <!-- Anúncio fixo na parte de baixo do site -->
             <div class="texto-anuncio">
                 <h1>Testar o Premium de graça</h1>
                 <p>Inscreva-se para curtir musica ilimitada e podcasts só com alguns anúncios. Não precisa de cartão de crédito.</p>
@@ -377,7 +399,7 @@
 
     </main>
 
-    <script src="javascript/script.js"></script>
+    <script src="javascript/script.js"></script> <!-- Liga o html com o JavaScript para interação -->
 
 </body>
 </html>

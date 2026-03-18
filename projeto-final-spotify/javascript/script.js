@@ -1,3 +1,5 @@
+/* Variáveis para pegar as setas, containers e entrada/saída do mouse */
+
 const setaE = document.getElementById('seta-e');
 const setaD = document.getElementById('seta-d');
 const setaEB = document.getElementById('seta-e-b');
@@ -44,13 +46,13 @@ entradaSaida2.addEventListener('mouseleave', () => {
 
 setaD.addEventListener('click', () => {
 
-    listaDeMusica.scrollBy({ left: 300, behavior: 'smooth'})
-
+    listaDeMusica.scrollBy({ left: 300, behavior: 'smooth'}) /* Seta vai para esquerda 300px com animação suave */
+    
 });
 
 setaE.addEventListener('click', () => {
 
-    listaDeMusica.scrollBy({ left: -300, behavior: 'smooth'})
+    listaDeMusica.scrollBy({ left: -300, behavior: 'smooth'}) /* Os valoes são negativos para voltar */
 
 });
 

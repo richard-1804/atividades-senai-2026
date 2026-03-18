@@ -7,7 +7,7 @@
     font-family: Poppins, sans-serif;
 }
 
-:root {
+:root { /* Variáveis que serão usadas no site */
 
     --bg: #000000;
     --bgCard: #313131;
@@ -26,7 +26,7 @@ body {
     background-color: var(--bg);
 }
 
-.header-principal {
+.header-principal { /* Configuração do header principal + icons e hovers */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -156,11 +156,11 @@ nav a:hover {
     font-size: 14px;
 }
 
-main {
+main { /* Configuração da main para organização de linhas e colunas */
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: stretch;    
+    align-items: stretch; /* garante que o side-content + o container principal fiquem do mesmo tamanho */
 
     width: 100%;
     padding-bottom: 90px;
@@ -170,17 +170,17 @@ main {
 
 .conteudo-principal{
     display: flex;
-    align-items: stretch;
+    align-items: stretch; /* O container preenche o espaço disponível */
     width: 100%;
     gap: 10px;
 }
 
-.side-content {
+.side-content { /* Configuranção da barra lateral */
     background-color: var(--card);
     display: flex;
     flex-direction: column;
 
-    min-height: 80vh;
+    min-height: 80vh; /* Mantem o mesmo tamanho do container */
     width: 400px;
     margin: 22px 0 0 10px;
     border-radius: 10px;
@@ -303,7 +303,7 @@ main {
     font-size: 15px;
 }
 
-.container {
+.container { /* Configuração do container de músicas e artistas */
     background-color: var(--card);
     display: flex;
     flex-direction: column;
@@ -344,7 +344,7 @@ main {
     text-decoration-color: var(--padrao);
 }
 
-#seta-e, #seta-d {
+#seta-e, #seta-d { /* Configuração das setas que apareceram com o JS */
     background-color: var(--infoSec);
     display: none;
     position: absolute;
@@ -355,7 +355,7 @@ main {
     border-radius: 50%;
     opacity: .8;
     cursor: pointer;
-    z-index: 3;
+    z-index: 3; /* Mantém as setas na frente dos cards */
 }
 
 #seta-e-b, #seta-d-b {
@@ -380,7 +380,7 @@ main {
     right: 36px;
 }
 
-.musica-alta {
+.musica-alta { /* Configuração da rolagem lateral dos cards */
     display: flex;
     gap: 15px;
     margin-bottom: 45px;
@@ -393,14 +393,14 @@ main {
     overflow-x: auto;
 }
 
-.musica-alta::-webkit-scrollbar, .artistas-populares::-webkit-scrollbar {
+.musica-alta::-webkit-scrollbar, .artistas-populares::-webkit-scrollbar { /* Remove a barra de rolagem no eixo X */
     display: none;
 }
 
 .musica, .artistas {
     display: flex;
     flex-direction: column;
-    flex-shrink: 0;
+    flex-shrink: 0; /* Não deixa os cards encolherem para caber no container */
     position: relative;
     padding: 10px;
     width: 200px;
@@ -413,7 +413,7 @@ main {
 }
 
 
-.musica:hover::after, .artistas:hover::after {
+.musica:hover::after, .artistas:hover::after { /* Ícone de play nas músicas */
     content: '▶︎';
     background-color: #3BE276;
     position: absolute;
@@ -437,7 +437,7 @@ main {
     right: 40px;
 }
 
-.musica figure, .artistas figure {
+.musica figure, .artistas figure { /* Configuração do nome das músicas e dos artistas */
     display: flex;
     flex-direction: column;
 }
@@ -479,7 +479,7 @@ main {
     text-decoration: underline;
 }
 
-.anuncio {
+.anuncio { /* Toda a configuração do anúncio */
     display: flex;
     justify-content: space-between;
     gap: 15px;;
