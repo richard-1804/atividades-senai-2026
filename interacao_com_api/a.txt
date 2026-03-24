@@ -1,0 +1,25 @@
+2. O Desafio (JavaScript - script.js)
+Agora, crie o arquivo script.js e desenvolva as funções solicitadas abaixo. Utilize a API de testes: https://jsonplaceholder.typicode.com
+
+Missão A: Buscar Dados (GET)
+
+Crie a função buscarTarefa() para consultar a tarefa de ID nº 1.
+
+Requisito: Use await fetch().
+Validação: Verifique se response.ok é verdadeiro.
+Saída: Exiba o título da tarefa no console e no elemento #log da tela.
+
+
+Missão B: Cadastrar Novo Recurso (POST)
+
+Crie a função cadastrarTarefa() para simular o envio de um novo item.
+Corpo: Envie um JSON com title, completed e userId.
+Cabeçalho: Configure obrigatoriamente o Content-Type: application/json.
+Saída: Verifique se o status retornado foi 201 (Created).
+
+
+Missão C: Atualizar Recurso (PUT)
+
+Crie a função atualizarTarefa() para modificar a tarefa de ID nº 1.
+Ação: Altere o campo completed para true.
+Saída: Exiba uma mensagem de sucesso caso o status seja 200 (OK).
