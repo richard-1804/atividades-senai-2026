@@ -54,6 +54,10 @@ async function atualizarTarefa() { // Outra função assíncrona. Método: PUT
     };
 };
 
+async function limparTarefa() { // função para limpar a caixa de exibição
+    document.getElementById('log').textContent = 'Aguardando ação...';
+}
+
 /* 
 
 Questões Teóricas:
