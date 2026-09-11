@@ -4,36 +4,26 @@ Objetivo: Mapear quais URLs respondem a quais ações e aplicar o "escudo" de va
 
 import { creatConsultaSchema, consultaIdParamSchema, } from "../schemas/consultaSchema.js";
 import { listAll, getById, create } from "../controller/consultaController.js";
+
+import authMiddleware from '../middleware/authMiddleware.js';
+import autorizarCargos from '../middleware/roleMiddleware.js';
+
 import express from "express";
 
 const router = express.Router();
 
 
-// =========================================================
-// Mapeamento das Rotas
-// =========================================================
 
-
-router.get("/", listAll);
-
-router.get(
-  "/:id",
-  (req, res, next) => {
+const validateId = (req, res, next) => {
     try {
       consultaIdParamSchema.parse(req.params);
       next();
     } catch (error) {
-      return res
-        .status(400)
-        .json({ erro: "Parâmetro Inválido", detalhes: error.issues });
+      return res.status(400).json({ erro: "Parâmetro Inválido", detalhes: error.issues });
     }
-  },
-  getById,
-);
+};
 
-router.post(
-  "/",
-  (req, res, next) => {
+const validateCrate = (req, res, next) => {
     try {
       creatConsultaSchema.parse(req.body);
       next();
@@ -45,8 +35,18 @@ router.post(
           erro: error.issues,
         });
     }
-  },
-  create,
-);
+};
+
+
+// =========================================================
+// Mapeamento das Rotas
+// =========================================================
+
+
+router.get("/", authMiddleware, listAll);
+
+router.get("/:id", authMiddleware, validateId, getById);
+
+router.post("/", authMiddleware, autorizarCargos('ADMIN', 'MEDICO'), validateCrate, create);
 
 export default router;

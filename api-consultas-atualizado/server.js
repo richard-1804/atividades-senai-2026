@@ -1,16 +1,20 @@
 import consultaRouter from "./src/routes/consultaRoutes.js";
+import authRoutes from "./src/routes/authRoutes.js";
 import express from "express";
 import cors from "cors";
 
+require('dotenv').config();
+
 const app = express();
-const PORTA = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(express.json());
 
 app.use('/consultas', consultaRouter);
+app.use('/auth', authRoutes);
 
 
-app.listen(PORTA, () => {
-    console.log(`Servidor rodando com sucesso na porta: ${PORTA}\nURL: http://localhost:3000/consultas`);
+app.listen(PORT, () => {
+    console.log(`Servidor rodando com sucesso na porta: ${PORT}`);
 });
