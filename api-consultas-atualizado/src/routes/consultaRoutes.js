@@ -5,8 +5,8 @@ Objetivo: Mapear quais URLs respondem a quais ações e aplicar o "escudo" de va
 import { creatConsultaSchema, consultaIdParamSchema, } from "../schemas/consultaSchema.js";
 import { listAll, getById, create } from "../controller/consultaController.js";
 
-import authMiddleware from '../middleware/authMiddleware.js';
-import autorizarCargos from '../middleware/roleMiddleware.js';
+import { authMiddleware } from '../middleware/authMiddleware.js';
+import { autorizarCargos } from '../middleware/roleMiddleware.js';
 
 import express from "express";
 
