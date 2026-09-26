@@ -1,0 +1,1 @@
+// extrai o token, separa do Bearer e decodifica
